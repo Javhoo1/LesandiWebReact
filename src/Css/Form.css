@@ -1,0 +1,113 @@
+.form-container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:10% 25%;
+
+}
+.divIndex{
+    background-color: black;
+}
+
+.form-content{
+    align-items: center;
+
+}
+
+.form{
+    padding: 4vh;
+    border-color: rgb(0, 232, 236);
+    border-style: solid;
+    border-radius: 1vh;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.81) 47%, rgba(237,237,237,0.6) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.81)), color-stop(100%, rgba(237,237,237,0.6)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.81) 47%, rgba(237,237,237,0.6) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.81) 47%, rgba(237,237,237,0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.81) 47%, rgba(237,237,237,0.6) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.81) 47%, rgba(237,237,237,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+
+.form label {
+    font-size: larger;
+    font-weight: 500;
+    color: #0025FA;
+}
+
+.form-inputs {
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+.form-inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+}
+
+.form-label {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    color: black;
+}
+
+.form-input {
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+.form-input::placeholder {
+    color: #595959;
+    font-size: 12px;
+}
+
+.form-input-btn {
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background: linear-gradient(
+      90deg,
+      rgb(39, 176, 255) 0%,
+      rgb(0, 232, 236) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-input-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      90deg,
+      rgb(39, 143, 255) 0%,
+      rgb(12, 99, 250) 100%
+    );
+    transition: all 0.4s ease-out;
+}
+
+.form-input-login {
+    font-size: 0.8rem;
+    margin-top: 10px;
+
+    width: 80%;
+    text-align: center;
+}
+
+.form-input-login a {
+    text-decoration: none;
+    color: #27cdff;
+    font-weight: 600;
+}
