@@ -1,0 +1,14 @@
+.game-card-img-top{
+    
+    align-self: center;
+}
+
+.game-card-body{
+    
+    align-self: center;
+}
+
+.game-card{
+    width: 50%;
+    margin: 0 25%;
+}

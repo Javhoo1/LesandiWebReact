@@ -1,3 +1,28 @@
-.nav-item{
+.navbar-nav-item{
     text-align: center;
+    padding: 1vh 3vh;
+}
+
+.navbar-ul{
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.navbar-nav-link{
+    color:black;
+    padding: 1vh 4vh;
+}
+
+.span-navbar{
+    min-width: max-content;
+}
+
+.nav-navbar{
+    background-color: cyan;
+    border-color: darkblue;
+    border-style: solid;
 }
