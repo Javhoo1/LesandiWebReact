@@ -12,17 +12,34 @@
     margin-top: 1rem;
 }
 
-.navbar-nav-link{
-    color:black;
-    padding: 1vh 4vh;
-}
-
 .span-navbar{
     min-width: max-content;
 }
 
 .nav-navbar{
-    background-color: cyan;
-    border-color: darkblue;
+    background: rgb(95,255,244);
+    background: linear-gradient(90deg, rgba(95,255,244,1) 0%, rgba(0,123,255,1) 50%, rgba(108,220,255,1) 100%);
+    border-color: whitesmoke;
     border-style: solid;
+    border-width: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-span-navbar{
+    border-color: white;
+    border-radius: 5vh;
+    border-width: 1vh;
+    border-style: solid;
+    margin: 1vh;
+    background-color: white;
+}
+
+.navbar-nav-link{
+    color:#007bff;
+    font-weight: 500;
+    font-size: large;
+    padding: 1vh 2vh;
 }

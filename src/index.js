@@ -9,6 +9,8 @@ import './Css/Index.css'
 import './Css/NavBar.css'
 import './Css/Footer.css'
 
+import './Css/Fonts.css'
+
 ReactDOM.render(
   <React.StrictMode>
     <NavBar/>

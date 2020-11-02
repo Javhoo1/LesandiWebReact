@@ -10,9 +10,9 @@ const FormSignup = ({ submitForm }) => {
   );
 
   return (
-    <div className='form-content'>
-      <form onSubmit={handleSubmit} className='form' noValidate>
-        <h1>
+
+      <form onSubmit={handleSubmit} className='form form-register' noValidate>
+        <h1 className="h1-register">
           CREA TU CUENTA
         </h1>
         <div className='form-inputs'>
@@ -70,7 +70,9 @@ const FormSignup = ({ submitForm }) => {
             name='grade'
             value={values.grade}
             onChange={handleChange}
+            autoFocus
           >
+            <option>Seleccione...</option>
             <option value='primer_grado'>Primer Grado</option>
             <option value='segundo_grado'>Segundo Grado</option>
             <option value='tercer_grado'>Tercer Grado</option>
@@ -96,7 +98,7 @@ const FormSignup = ({ submitForm }) => {
           ¿Ya tienes una cuenta? Inicia sesión <a href='Login'>aquí</a>
         </span>
       </form>
-    </div>
+  
   );
 };
 

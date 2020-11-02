@@ -1,7 +1,9 @@
 .footerBox{
-    background-color: #F1F1F1;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,233,235,1) 0%, rgba(0,123,255,1) 100%);
     text-align: center;
     padding: 10px;
+    margin: 0;
 }
 
 .footerIcono{
@@ -11,12 +13,13 @@
 
 .footerText{
     margin: 100px;
-    color: black;
-    font-weight: 300;
+    color: white;
+    font-weight: 600;
     font-size: 30px;
 }
 
 .footerCopyright{
-    color: black;
+    color: white;
     font-size: 20px;
+    font-weight: 400;
 }

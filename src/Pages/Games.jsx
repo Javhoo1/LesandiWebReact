@@ -5,14 +5,51 @@ import '../Css/Games.css'
 
 export default function Games(){
     return(
+
+        <div class="div-games">
+            <h1 className="h1-games">
+                Bienvenido a nuestra sección de juegos.
+            </h1>
+            <h1 className="h1-games">
+                Elige el que más te guste.
+            </h1>
         
+        <div class="card mb-3 game-card">
+            <img src="juego1.jpeg" class="card-img-top game-card-img-top" />
+            <div class="card-body game-card-body">
+                <h5 class="card-title"><a href="Lesandi1.html">Primero de primaria</a></h5>
+                <p class="card-text">
+                    Este juego se enfonca en la conciencia fonológica, 3 divertidos niveles para que pongas a prueba
+                    tus habilidades de relacionar sonidos con objetos.
+                </p>
+                <p class="card-text"><small class="text-muted">Conciencia fonológica.</small></p>
+            </div>
+        </div>
+
         <div class="card mb-3 game-card">
             <img src="juego2.jpg" class="card-img-top game-card-img-top" />
             <div class="card-body game-card-body">
-                <h5 class="card-title"><a href="Lesandi1.html">Juego 1</a></h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title"><a href="Lesandi1.html">Segundo de primaria</a></h5>
+                <p class="card-text">
+                    El objetivo en este juego es relacionar objetos y comprobar si riman, un divertido ejercicio 
+                </p>
+                <p class="card-text"><small class="text-muted">Conciencia fonológica</small></p>
             </div>
         </div>
+
+        <div class="card mb-3 game-card">
+            <img src="juego3.jpg" class="card-img-top game-card-img-top" />
+            <div class="card-body game-card-body">
+                <h5 class="card-title"><a href="Lesandi1.html">Tercero de primaria</a></h5>
+                <p class="card-text">
+                    Es hora de poner a prueba todo lo que sabes, en los siguiente 3 niveles queremos saber si eres o no capaz de enfrentar
+                    este difícil juego.
+                </p>
+                <p class="card-text"><small class="text-muted">Comprensión lectora</small></p>
+            </div>
+        </div>
+        <br/>
+        </div>
+
     );
 }
