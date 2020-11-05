@@ -32,13 +32,13 @@ class Login extends Component {
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-3 font-weight-normal">Inicia Sesion</h1>
+                            <h1 className="h3 mb-3 font-weight-normal h1-login">Inicia Sesion</h1>
                             <div className="form-group">
                                 <label htmlFor="user_name">Ingresa usuario</label>
                                 <input type="text"
                                     className="form-control"
                                     name="user_name"
-                                    placeholder="User"
+                                    placeholder="Nombre de usuario"
                                     value={this.state.user_name}
                                     onChange={this.handleChange} />
                             </div>
@@ -47,7 +47,7 @@ class Login extends Component {
                                 <input type="password"
                                     className="form-control"
                                     name="password"
-                                    placeholder="Password"
+                                    placeholder="Contraseña"
                                     value={this.state.password}
                                     onChange={this.handleChange} />
                             </div>

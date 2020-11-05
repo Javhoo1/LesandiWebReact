@@ -6,11 +6,11 @@ import '../Css/Form.css';
 const FormSuccess = () => {
   return (
     
-    <div className='form-content-right'>
+    <div className='form-content-right form-success'>
   
       
       <h1 className='form-success'>Recibimos tu registro!</h1>
-      <h3>En un momento te direccionaremos para que puedas iniciar sesion.</h3>
+      <h3>Inicia sesión <a href="Login">Aquí</a> para que comienzes a jugar.</h3>
       
     </div>
   );

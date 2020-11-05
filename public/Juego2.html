@@ -1,0 +1,182 @@
+<!-- Detalles: las letras se pueden repetir, faltan imagenes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primero de Primaria</title>
+
+    <style>
+
+        .Question{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .Right{
+            background-color: green !important;
+
+        }
+
+        .Wrong{
+            background-color: red;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            
+        }
+        .ans button {
+           display: block;
+           justify-content: center;
+           background-color: lightsalmon; 
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            align-items: center;
+            margin: 0 40%;
+            font-size: 16px;
+           width: 20%;
+            border:orangered 1px;
+           
+        }
+
+        .sig{
+             width: 25;
+             float: right;
+             background-color: lime;
+             color: black;
+        }
+        .imagenes{
+            margin: 10px 10%;
+            display: inline-block;
+            text-align: center;
+            
+
+        }
+        .RightCSS{
+            display: inline-flex;
+            
+        }
+        
+        .h1-juego2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1 class="h1-juego2">Escoje la vocal con la que empiezan los nombres de las siguientes imagenes.</h1>
+    <div class="Question"> 
+    
+    </div>
+    <button onclick="nextQuestion()" id = "siguiente" class="sig">Siguiente Pregunta</button>
+
+    <script>
+
+        let RightAnswers;
+        let correcto =0;
+        let incorrecto =0;
+        var cont =0;
+        var pasado = [];
+        var letra= [0, 1, 2, 3, 4]; // A=0, E=1, I=2 ...
+        var Respuestas= ['A', 'E', 'I', 'O', 'U'];
+        
+
+        const Cuestionary = [
+
+            {"Question" : "Selecciona la imagen que inicie con la vocal 'A'.",
+                "Answers": ["Ardilla", "Armadillo", "Agua", "Abeja", "Araña", "Avion", "Auto", "Anillo", "Aguila"] //Objetos con las imagenes tenemos que remplazar.
+                
+            },
+
+            {"Question" : "Selecciona la imagen que inicie con la vocal 'E'.",
+                "Answers": ["Elote", "Escuela", "Espejo", "Escalera", "Escoba", "Empanada", "Elefante", "Erizo", "Estrella", "Escudo"]//Objetos con las imagenes tenemos que remplazar.
+            },
+
+            {"Question" : "Selecciona la imagen que inicie con la vocal 'I'.",
+                "Answers": ["Iguana", "Iglesia", "Iman", "Iglu", "Invierno", "Indio", "Insectos", "Isla"] //Objetos con las imagenes tenemos que remplazar
+            },
+
+            {"Question" : "Selecciona la imagen que inicie con la vocal 'O'.",
+                "Answers": ["Oveja", "Oreja", "Ovni", "Olla", "Ojo", "Ola", "Ocho", "Oso", "Oruga"] //Objetos con las imagenes tenemos que remplazar.
+            },
+
+            {"Question" : "Selecciona la imagen que inicie con la vocal 'U'.",
+                "Answers": ["Uno", "Uva", "Unicornio", "Uña", "Uniforme", "Utiles", "Urraca", "Universo"] //Objetos con las imagenes tenemos que remplazar.
+            }
+            
+        ];
+
+        const nextQuestion = _ => {
+            printHTMLQuestion(letra[0]);
+        }
+        
+        const preguntaRandom = (letra) =>{
+            letra = letra.sort((a,b) => Math.floor(Math.random()* 3) -1);
+         
+        }
+        const printHTMLQuestion = (i) => {
+            
+            document.getElementById('siguiente').disabled = true;
+
+            preguntaRandom(letra);
+            const q = Cuestionary[letra[0]];
+            let a = q.Answers;
+            a = a.sort((a,b) => Math.floor(Math.random()* 3) -1);
+            var imagenes= [a[0], a[1], a[2], a[3]];
+            const HTMLAnswersArray = imagenes.map( CurrentA => `<p class="imagenes"><img src="imagenes2/${CurrentA}.jpg" /> </p>`); 
+            const HTMLRespuestasPosibles = Respuestas.map( CurrentR => `<p class="ans"><button onClick="EvaluateAnswers('${CurrentR}', this)">${CurrentR}</button> </p>`); //Se establece la respuesta correcta de la pregunta
+            const HTMLRespuestas = HTMLRespuestasPosibles.join(' ');
+            const HTMLAnswers = HTMLAnswersArray.join(' ');
+            
+
+            let HTMLQuestionCode = `<p>${HTMLAnswers}</p><div>${HTMLRespuestas}</div>`;
+            document.querySelector('.Question').innerHTML = HTMLQuestionCode; 
+        }
+
+        const EvaluateAnswers = (Answers, obj) => {
+            document.querySelectorAll('.ans').forEach( a => a.classList.remove('Wrong'));
+            const parentP = obj.parentNode;
+            var indice =0;
+           // console.log('Answers: ' + Answers + ', RightAnswers: ' + RightAnswers + '  ' + letra[currentPosition] )
+            if(Answers == Respuestas[letra[0]]) {
+                if(parentP.classList.contains('Right')){
+                    
+                }
+                else{
+                 parentP.classList.add('Right');
+                correcto++;
+                document.querySelector('.Rightc').innerHTML = correcto;
+                }
+                if(correcto>=1)
+                    document.getElementById('siguiente').disabled = false;
+                 if(correcto==3)
+                    alert("Felicidades, te llevaremos al siguiente nivel.");  // Aqui termina el Juego, redireccionar a la pagina principal 
+                if(correcto==3)
+                    window.location="juego3.html";
+            }
+                else {
+                    parentP.classList.add('Wrong');
+                    incorrecto++;
+                    document.querySelector('.Wrongc').innerHTML = incorrecto;
+                    
+                }
+        }
+        printHTMLQuestion(0); //Seleccionamos la pregunta #.
+        
+
+    </script>
+        <p class="RightCSS">Respuestas Correctas: <span class = "Rightc">0</span></p>
+        <br/>
+
+        <p class= "RightCSS">Respuestas Incorrectas: <span class ="Wrongc">0</span></p>
+
+</body>
+</html>

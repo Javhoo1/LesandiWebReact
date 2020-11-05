@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from './Components/Footer'
-import NavBar from './Components/NavBar'
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import './Css/Index.css'
-import './Css/NavBar.css'
-import './Css/Footer.css'
-
 import './Css/Fonts.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar/>
+    
     <App />
-    <Footer/>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Footer from '../Components/Footer'
+import NavBar from '../Components/NavBar1'
+
 /* CSS */
 import '../Css/Nosotros.css'
 /* CSS */

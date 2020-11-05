@@ -13,3 +13,8 @@
 /*   font-family: 'Bungee Inline', cursive;  */
 @import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');
 /*  font-family: 'Sunshiney', cursive;  */
+@font-face {
+    font-family: "KIDS";
+    src: url("../Fonts/KIDS.TTF");
+  }
+/*  font-family: "KIDS";  */

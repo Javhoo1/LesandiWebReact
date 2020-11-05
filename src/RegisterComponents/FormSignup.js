@@ -16,7 +16,7 @@ const FormSignup = ({ submitForm }) => {
           CREA TU CUENTA
         </h1>
         <div className='form-inputs'>
-          <label className='form-label'>Nombre de usuario</label>
+
           <input
             className='form-input'
             type='text'
@@ -28,7 +28,7 @@ const FormSignup = ({ submitForm }) => {
           {errors.user_name && <p>{errors.user_name}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Nombre</label>
+
           <input
             className='form-input'
             type='text'
@@ -40,7 +40,7 @@ const FormSignup = ({ submitForm }) => {
           {errors.nombre && <p>{errors.nombre}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Contraseña</label>
+
           <input
             className='form-input'
             type='password'
@@ -52,7 +52,7 @@ const FormSignup = ({ submitForm }) => {
           {errors.password && <p>{errors.password}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Ingresa nuevamente tu contraseña</label>
+
           <input
             className='form-input'
             type='password'
@@ -64,7 +64,7 @@ const FormSignup = ({ submitForm }) => {
           {errors.password2 && <p>{errors.password2}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Ingresa tu grado escolar</label>
+
           <select
             className="form-control"
             name='grade'
@@ -72,7 +72,7 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
             autoFocus
           >
-            <option>Seleccione...</option>
+            <option>Grado escolar</option>
             <option value='primer_grado'>Primer Grado</option>
             <option value='segundo_grado'>Segundo Grado</option>
             <option value='tercer_grado'>Tercer Grado</option>
@@ -81,17 +81,17 @@ const FormSignup = ({ submitForm }) => {
           {errors.grade && <p>{errors.grade}</p>}
         </div>
         <div className='form-inputs'>
-          <label className='form-label'>Ingresa el nombre de institución</label>
+
           <input
             className='form-input'
             type='text'
             name='institution'
-            placeholder='Nombre institución (opcional)'
+            placeholder='Nombre escuela (opcional)'
             value={values.institution}
             onChange={handleChange}
           />
         </div>
-        <button className='form-input-btn' type='submit'>
+        <button className='btn btn-info button-login' type='submit'>
           Crear Cuenta
         </button>
         <span className='form-input-login'>

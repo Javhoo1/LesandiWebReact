@@ -1,25 +1,23 @@
 .footerBox{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,233,235,1) 0%, rgba(0,123,255,1) 100%);
     text-align: center;
     padding: 10px;
     margin: 0;
+    background-color: white;
 }
 
 .footerIcono{
-
-    margin: 10px 20px;
+    margin: 5px 20px;
 }
 
 .footerText{
     margin: 100px;
-    color: white;
+    color: #007bff;
     font-weight: 600;
     font-size: 30px;
 }
 
 .footerCopyright{
-    color: white;
+    color: #007bff;
     font-size: 20px;
     font-weight: 400;
 }

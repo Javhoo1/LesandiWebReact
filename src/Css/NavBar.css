@@ -17,11 +17,9 @@
 }
 
 .nav-navbar{
-    background: rgb(95,255,244);
-    background: linear-gradient(90deg, rgba(95,255,244,1) 0%, rgba(0,123,255,1) 50%, rgba(108,220,255,1) 100%);
-    border-color: whitesmoke;
-    border-style: solid;
+    background-color: white;
     border-width: 2px;
+    background-color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -38,7 +36,6 @@
 }
 
 .navbar-nav-link{
-    color:#007bff;
     font-weight: 500;
     font-size: large;
     padding: 1vh 2vh;

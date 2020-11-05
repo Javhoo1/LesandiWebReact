@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Footer from '../Components/Footer'
+import NavBar from '../Components/NavBar1'
+
 /* CSS */
 import '../Css/Default.css'
 /* CSS */
@@ -9,8 +12,8 @@ export default function Home(){
         <body className="bodyHome">
             <div className="divHomeTop">
                 <div className="divHome">
-                    <h1 className="h1Home">BIENVENIDOS A LESANDI</h1>
-                    <h3 className="h3Home">Aprender nunca ha sido tan divertido</h3>
+                    <h1  className="h1Home">BIENVENIDOS A LESANDI</h1>
+                    <h3  className="h3Home">Aprender nunca ha sido tan divertido</h3>
                     <a href="Login" class="btn btn-outline-info btn-lg" role="button" aria-pressed="true">INICIAR SESIÓN</a>
                     <a href="Register" class="btn btn-outline-success btn-lg" role="button" aria-pressed="true">REGISTRARSE</a>
                 </div>

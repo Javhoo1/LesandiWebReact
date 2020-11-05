@@ -1,0 +1,65 @@
+/* Contenedor navbar */
+.nav-navbar{
+    background-color: white;
+}
+/* Fin */
+
+
+/* Css Logo NavBar */
+.img-navbar{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: white !important;
+}
+
+@keyframes rotate {
+    0% {
+        transform:rotate(0deg); 
+    }
+    50% {
+        transform:rotate(5deg); 
+    }
+    75% {
+        transform:rotate(-5deg); 
+    }
+    100% {
+        transform:rotate(0deg); 
+    }
+}
+
+/* Fin Logo NavBar */
+
+/* Texto NavBar Logo */
+.text-logo{
+    width: 20%;
+    color: #1d7e9b !important;
+    font-family: Itim, cursive;
+    font-weight: 600;
+}
+.text-lesandi{
+    padding: 0 20px;
+}
+/* Fin Texto Logo NavBar */
+
+/* Contenedor Texto Navbar */
+.li-navbar{
+    padding: 0 10%;
+}
+/* Fin Contenedor */
+
+/* Texto NavBar */
+.text-navbar{
+    color: #1d7e9b !important;
+    font-family: Itim, cursive;
+    
+}
+.text-navbar:hover{
+    background-color: white;
+    border-radius: 5vh;
+    
+}
+/* Fin Texto NavBar */
