@@ -4,14 +4,13 @@
 }
 /* Fin */
 
-
 /* Css Logo NavBar */
 .img-navbar{
     border-radius: 50%;
     border-style: solid;
     border-color: white;
     animation-name: rotate;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     background-color: white !important;
 }
@@ -47,7 +46,7 @@
 
 /* Contenedor Texto Navbar */
 .li-navbar{
-    padding: 0 10%;
+    padding: 0 5%;
 }
 /* Fin Contenedor */
 
