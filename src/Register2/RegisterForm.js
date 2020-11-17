@@ -1,6 +1,6 @@
 import React from 'react';
-import validate from '../RegisterComponents/validateInfo';
-import useForm from '../RegisterComponents/useForm';
+//import validate from '../RegisterComponents/validateInfo';
+//import useForm from '../RegisterComponents/useForm';
 import '../Css/Form.css';
 
 class RegisterForm extends React.Component{

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { login } from './UserFunctions'
+// import { login } from './UserFunctions'
+import NavBar from '../Components/NavBar1';
 
 import '../Css/Login.css'
 
@@ -27,32 +28,42 @@ class Login extends Component {
 
     render () {
         return (
+            
             <body className="bodyLogin">
+                <NavBar/>
+                <span className='romboLogin'></span>
+                <span className='romboLogin'></span>
+                <span className='romboLogin'></span>
+                <span className='romboLogin'></span>
+                <span className='romboLogin'></span>
             <div className="containerLogin">
+
+                
+
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h3 mb-3 font-weight-normal h1-login">Inicia Sesion</h1>
+                            <h1 className="h1-login">Inicia Sesion</h1>
                             <div className="form-group">
-                                <label htmlFor="user_name">Ingresa usuario</label>
+                                <label className="label-login">Nombre de Usuario</label>
                                 <input type="text"
                                     className="form-control"
                                     name="user_name"
-                                    placeholder="Nombre de usuario"
+                                    placeholder=""
                                     value={this.state.user_name}
                                     onChange={this.handleChange} />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="password">Ingresa contraseña </label>
+                            <label className="label-login">Contraseña</label>
                                 <input type="password"
                                     className="form-control"
                                     name="password"
-                                    placeholder="Contraseña"
+                                    placeholder=""
                                     value={this.state.password}
                                     onChange={this.handleChange} />
                             </div>
 
-                            <button type="submit" className="btn btn-lg btn-primary btn-block">
+                            <button type="submit" className="button-login">
                                 Iniciar Sesion
                             </button>
                         </form>

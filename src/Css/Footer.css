@@ -2,22 +2,7 @@
     text-align: center;
     padding: 10px;
     margin: 0;
-    background-color: white;
-}
-
-.footerIcono{
-    margin: 5px 20px;
-}
-
-.footerText{
-    margin: 100px;
-    color: #007bff;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.footerCopyright{
-    color: #007bff;
-    font-size: 20px;
-    font-weight: 400;
+    background-color: #1d7e9b;
+    height: 150px;
+    display: flex;
 }

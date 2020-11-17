@@ -1,18 +1,37 @@
-.hr-home{
-    background-color: #1d7e9b;
-    height: 150px !important;
-    margin-top: 500px;
+/* TITULO HOME LESANDI*/
+.titulo-lesandi{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #1d7e9b;
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 54.9px;
+    padding: 50px;
 }
+/* FIN */
+
+/* h3 Home */
+.h3-home{
+    text-align: center;
+}
+
+.h3-home h3{
+    font-family: 'Roboto';
+    color: #1d7e9b;
+    font-weight: 600;
+    font-size: 35.2px;
+}
+/* Fin */
+
 /* TIPOGRAFIA  */
 .info-back h3{
-    font-family: Itim, cursive;
-    font-weight: 600;
+    font-family: Roboto;
     font-size: x-large !important;
 }
 
 .info-back p{
-    font-family: Itim, cursive;
-    font-weight: 600;
+    font-family: Roboto;
     font-size: large !important;
 }
 
@@ -97,8 +116,8 @@
 
 /* boton login en home */
 .button-login-home{
-    font-family: Itim, cursive;
-    font-weight: 700;
+    font-family: Roboto;
+    font-weight: 900;
     font-size: 2vw;
     text-align: center;
     float: right;
@@ -119,8 +138,8 @@
 }
 
 .button-unete-home{
-    font-family: Itim, cursive;
-    font-weight: 700;
+    font-family: Roboto;
+    font-weight: 900;
     font-size: 2vw;
     text-align: center;
     float: right;
@@ -141,9 +160,7 @@
 
 /* Fin */
 
-/*  
-
-/* bubbles ANIMADAS */
+/* BURBUJAS ANIMADAS */
 
 .bubble{
     border-radius: 50%;
@@ -262,42 +279,8 @@
     }
 }
 
-/* FIN */
-
-/* FONTS */
-
-@font-face {
-    font-family: kids;
-    src: url('../Fonts/KIDS.TTF') format('truetype');
+p{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14.4px;
 }
-
-@font-face{
-    font-family: "Cute_Notes";
-    src: url('../Fonts/Cute_Notes.ttf') format('truetype');
-}
-@font-face{
-    font-family: "Scrabbles";
-    src: url('../Fonts/Scrabbles.ttf') format('truetype');
-}
-
-/* Fin FONTS */
-
-h1 a{
-    font-family: 'Itim', cursive;
-    
-}
-
-h2{
-    font-family: 'Bungee Inline', cursive;
-}
-
-h3{
-    
-    font-family: 'Indie Flower', cursive;
-}
-
-p {
-    font-family: 'Cousine', monospace;
-}
-
-/* Animations */

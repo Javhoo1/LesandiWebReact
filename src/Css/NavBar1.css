@@ -1,3 +1,8 @@
+.navbar-content{
+    display: contents;
+    list-style: none;
+}
+
 /* Contenedor navbar */
 .nav-navbar{
     background-color: white;
@@ -36,25 +41,28 @@
 .text-logo{
     width: 20%;
     color: #1d7e9b !important;
-    font-family: Itim, cursive;
-    font-weight: 600;
+    font-family: Roboto;
+    font-weight: 900;
+
 }
 .text-lesandi{
     padding: 0 20px;
+   /* font-size: x-large; */
 }
 /* Fin Texto Logo NavBar */
 
 /* Contenedor Texto Navbar */
 .li-navbar{
-    padding: 0 5%;
+    width: 20%;
 }
 /* Fin Contenedor */
 
 /* Texto NavBar */
 .text-navbar{
     color: #1d7e9b !important;
-    font-family: Itim, cursive;
-    
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 25px;
 }
 .text-navbar:hover{
     background-color: white;
