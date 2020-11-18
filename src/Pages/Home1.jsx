@@ -21,14 +21,9 @@ export default function Home(){
             
             
             <div className="div-logo">
-                <div class="div-widht-height ih-item circle colored effect18 right_to_left "><a href="Home">
-                <div class="img"><img src="Logo-Lesandi2.png" alt="img"/></div>
+                <div class="div-widht-height ih-item circle colored effect18 "><a href="Home">
+                <div class="img-logo"><img src="Logo-Lesandi2.png" alt="img"/></div>
                 <div class="info">
-                <div class="info-back">
-                    <h3>Bienvenidos a Lesandi</h3>
-                    <p>Aprender nunca ha sido tan divertido</p>
-                    <img src="niños.png" width="10%" height="auto"></img>
-                </div>
                 </div></a></div>
             </div>
 

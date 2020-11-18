@@ -8,7 +8,7 @@
     left: 20%;
     align-items: center;
     width: 60%; 
-    height: 47rem; 
+    height: 45rem; 
     background: none;
     -webkit-transform: rotate(83deg);
     -moz-transform: rotate(83deg);
@@ -33,31 +33,31 @@
 .rombo:nth-child(2){
     background: white;
     z-index: 12;
-    -webkit-transform: rotate(8deg);
-    -moz-transform: rotate(8deg);
-    -ms-transform: rotate(8deg);
-    -o-transform: rotate(8deg);
-    transform: rotate(8deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
 }
 
 .rombo:nth-child(3){
     background: #32cf01;
     z-index: 11;
-    -webkit-transform: rotate(6deg);
-    -moz-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
-    -o-transform: rotate(6deg);
-    transform: rotate(6deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    transform: rotate(1deg);
 }
 
 .rombo:nth-child(4){
     background: #23385c;
     z-index: 10;
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
 }
 
 .div-form-register{
@@ -89,7 +89,7 @@
 .h1-register{
     color: #1d7e9b;
     font-family: Roboto;
-    font-size: 54.9px;
+    font-size: 43.9px;
     font-weight: 700;
 }
 
@@ -127,8 +127,8 @@ border-style: solid;
     position: relative;
 }
 
-.form label {
-    font-size: 3vh;
+.label-register{
+    font-size: 18px;
     color: #1d7e9b;
     font-weight: 600;
     align-items: center;
@@ -142,7 +142,7 @@ border-style: solid;
 .form-inputs p {
     margin: 0 !important;
     color:#FA4D24;
-    font-family: Itim, cursive;
+    font-family: Roboto;
 }
 
 .form-input {

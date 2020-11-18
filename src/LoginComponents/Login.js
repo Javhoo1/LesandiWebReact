@@ -43,7 +43,7 @@ class Login extends Component {
                 <div className="row">
                     <div className="col-md-6 mt-5 mx-auto">
                         <form noValidate onSubmit={this.onSubmit}>
-                            <h1 className="h1-login">Inicia Sesion</h1>
+                            <h1 className="h1-login">Inicia Sesión</h1>
                             <div className="form-group">
                                 <label className="label-login">Nombre de Usuario</label>
                                 <input type="text"
@@ -64,7 +64,7 @@ class Login extends Component {
                             </div>
 
                             <button type="submit" className="button-login">
-                                Iniciar Sesion
+                                Iniciar Sesión
                             </button>
                         </form>
                         <p>¿No tienes cuenta?, <a href="Register">Registrate aquí.</a></p>

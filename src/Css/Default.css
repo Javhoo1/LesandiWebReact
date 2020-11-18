@@ -91,7 +91,7 @@
     z-index: 100;
 }
 
-.img{
+.img-logo{
     width: 450px !important;
     height: 450px !important;
 }
@@ -145,11 +145,13 @@
     float: right;
     border-radius: 5vh 0 0 5vh;
     border-style: solid;
+    border-color: #0077b6;
     padding: 2vh 0 2vh 5vh;
     margin-bottom: 150px;
     height: fit-content;
     width: 60%;
-    color:  #0077b6;
+    color:  white;
+    background-color: #0077b6;
 }
 
 .button-unete-home:hover{
